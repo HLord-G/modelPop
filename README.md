@@ -2,6 +2,13 @@
  
 ## Popup Model
 
+
+```bash
+git clone --no-checkout https://github.com/HLord-G/modelPop.git
+```
+
+<br><br>
+
 _*Para Asa?:*_
 
 *ge buhat ko ni na library para dali lang sa ako pag create ug Dialog: Model o Alert ug dali lang pag script ug pag edit sa tamplate ug design.*
