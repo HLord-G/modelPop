@@ -179,3 +179,15 @@ PopModel.alertModel({
 * center-center
 * bottom-left
 * bottom-right
+
+
+*timer sa pag close sa Alert*
+```js
+"timerClose": 5000,
+```
+
+
+*functions para pag open sa Dialog: Alert*
+```js
+ PopModel.modelRunner("alertSample");
+```
