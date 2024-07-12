@@ -156,6 +156,8 @@ PopModel.model({
 
 ---
 
+<br><br><br><br><br><br>
+
 # Alert
 
 *parihas lang ug functions ang alert og model pero ang wala lang sa alert is `timerRemove` `timerPopUp` butangan ko rana sila soon. pero pwide raman nimo eh enhance nimo na gamit ang `PopModel.modelRunner("")` para pag open sa Alert*
