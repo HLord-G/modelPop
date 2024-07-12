@@ -103,6 +103,8 @@ class PopModel {
         document.addEventListener('click', function(event) {
             if (event.target.hasAttribute('popModelYes') && event.target.getAttribute('popModelYes') === system["model-name"]) {
                 system.yes();
+                overflowhiddenBody(false)
+                document.querySelector(`#${system["model-name"]}`).remove();
             }
         });
 
@@ -327,6 +329,12 @@ class PopModel {
         document.addEventListener('click', function(event) {
             if (event.target.hasAttribute('popModelYes') && event.target.getAttribute('popModelYes') === system["model-name"]) {
                 system.yes();
+
+                let parentDiv = event.target.closest('span'); // Replace with the specific class or ID of the parent div
+                if (parentDiv) {
+                    let elementId = parentDiv.id; // Get the ID of the parent div
+                    document.querySelector(`#${elementId}`).remove()
+                } 
             }
         });
 
@@ -344,6 +352,9 @@ class PopModel {
 
         document.addEventListener('click', function(event) {
             if (event.target.hasAttribute('popModelNo') && event.target.getAttribute('popModelNo') === system["model-name"]) {
+                
+                system.no(); // Pass the ID to the system.no function
+
                 // Traverse up the DOM tree to find the closest parent div with a specific class or ID
                 let parentDiv = event.target.closest('span'); // Replace with the specific class or ID of the parent div
                 if (parentDiv) {
@@ -351,19 +362,10 @@ class PopModel {
                     document.querySelector(`#${elementId}`).remove()
                 } 
                 
-                system.no(); // Pass the ID to the system.no function
-
+                
             }
         });
         
 
     }
 }
-
-
-function closeModel(x) {
-    document.querySelector(`#${x}`).remove()
-}
-
-
-

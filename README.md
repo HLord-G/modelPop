@@ -14,7 +14,7 @@ _*Para Asa?:*_
 
 ---
 
-*sample sa model *
+*sample sa model*
 ```js
 PopModel.model({
     "model-name":"other",
@@ -44,7 +44,6 @@ PopModel.model({
 
 
     yes:()=>{
-        closeModel("other")
         PopModel.modelRunner("creator");
     },
 
@@ -81,7 +80,8 @@ PopModel.model({
 ```
 
 
-*kung nai popup naa pud close, pag apply sa close timer sa Model *
+*kung nai popup naa pud close, pag apply sa close timer sa Model*
+
 ```js
     timerRemove: 3000,  
 ```
@@ -93,3 +93,26 @@ PopModel.model({
 ```
 
 
+*pag edit sa model panel.*
+```js
+   "modelLayout":{
+        "backGroundOpaciy":6,
+        "panelWidth":"unset",
+        "panelHeight":"unset",
+        "panelBackgroundColor":"#fff"        
+    },
+```
+
+
+*function kung nag clikc siya yes*
+```js
+    yes:()=>{
+        console.log("11")
+        console.log(document.querySelector("#alertpanel"))
+    },
+```
+*haya rana mo function and yes statement kung and button nai attrebute na `popModelYes` sulod sa template*
+
+```html
+<button class="px-6 py-2 rounded-sm" popModelNo>Cancel</button>
+```
