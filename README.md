@@ -138,6 +138,8 @@ PopModel.model({
 
 ---
 
+<br><br>
+
 *pag close sa model or alert dapat eh apply ni siya sa template*
 
 ```js
@@ -148,3 +150,32 @@ PopModel.model({
 ---
 
 # Alert
+
+*parihas lang ug functions ang alert og model pero ang wala lang sa alert is `timerRemove` `timerPopUp` butangan ko rana sila soon. pero pwide raman nimo eh enhance nimo na gamit ang `PopModel.modelRunner("")` para pag open sa Alert*
+
+---
+
+<br>
+
+*pag create ug alert dialog*
+```js
+PopModel.alertModel({
+    "model-name":"alertSample",
+})
+```
+
+*limit kung pila ang ma view ka alert*
+```js
+"poplimits": 5,
+```
+
+*pag position sa alert*
+```js
+"positionStyle":"bottom-left",
+```
+
+* top-left
+* top-right
+* center-center
+* bottom-left
+* bottom-right
