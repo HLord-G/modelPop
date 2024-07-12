@@ -103,6 +103,8 @@ PopModel.model({
     },
 ```
 
+<br><br>
+
 ---
 
 *function kung nag clikc siya yes*
@@ -133,3 +135,16 @@ PopModel.model({
 ```html
 <button class="px-6 py-2 rounded-sm" popModelNo>Cancel</button>
 ```
+
+---
+
+*pag close sa model or alert dapat eh apply ni siya sa template*
+
+```js
+<button class="px-6 py-2 rounded-sm" closethismodel>Cancel</button>
+```
+
+
+---
+
+# Alert
