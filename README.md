@@ -103,6 +103,7 @@ PopModel.model({
     },
 ```
 
+---
 
 *function kung nag clikc siya yes*
 ```js
@@ -112,6 +113,22 @@ PopModel.model({
     },
 ```
 *haya rana mo function and yes statement kung and button nai attrebute na `popModelYes` sulod sa template*
+
+```html
+<button class="px-6 py-2 rounded-sm" popModelYes>Cancel</button>
+```
+
+
+---
+
+*function kung nag clikc siya no sama gehapun sa yes pari-parihas lang sila pamage.*
+```js
+    no:()=>{
+        console.log("11")
+        console.log(document.querySelector("#alertpanel"))
+    },
+```
+*haya rana mo function and no statement kung and button nai attrebute na `popModelNo` sulod sa template*
 
 ```html
 <button class="px-6 py-2 rounded-sm" popModelNo>Cancel</button>
